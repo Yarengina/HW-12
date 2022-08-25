@@ -5,7 +5,7 @@
 import styled from 'styled-components'
 
 const StyledTitle = styled.div`
-  color: ${(props) => props.color || 'green'};
+  color: ${(props) => props[0].color || 'green'};
   font-size: 14px;
 `
 
