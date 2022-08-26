@@ -1,20 +1,15 @@
 import * as S from './styles'
 
 const Button = (props) => {
-    let isDisabled = true
-    
-    if(props.lines.length > 1) {
-        isDisabled = false 
-    }
+    const isDisabled = !(props.lines.length > 1)
     
     const onClick = () => {
-        if(props.lines.length > 1) {
-            props.lines.splice(1, props.lines.length)
-            props.setLines([...props.lines])
+        if(!isDisabled) {
+            props.setLines(['C/users/SKYPRO_REACT>'])
         } 
     }
     // eslint-disable-next-line react/jsx-props-no-spreading
-    return <S.ButtonClean type="button" {...props} disabled={isDisabled} onClick={onClick}/>  
+    return <S.ButtonClean type='button' {...props} onClick={onClick}/>  
 }
 
 export default Button

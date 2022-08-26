@@ -4,9 +4,9 @@ import * as S from './styles'
 const App = () => (
   <>
     <S.GlobalStyle />
-    <S.Flex>
+    <S.Container>
       <Theme />
-    </S.Flex>
+    </S.Container>
   </>
 )
 

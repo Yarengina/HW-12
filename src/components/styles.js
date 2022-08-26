@@ -6,10 +6,10 @@ height: 30px;
 width: 150px;
 font-size: 14px;
 align-items: center;
-border: 1px solid ${(props) => props.color || 'green'};
+border: 1px solid ${(props) => props.color};
 border-radius: 5px;
 background: none;
-color: ${(props) => props.color || 'green'};
+color: ${(props) => props.color};
 :hover {
   height: 32px;
   width: 152px;
@@ -30,7 +30,7 @@ export const StyledConsole = styled.textarea`
   &:focus{
     outline:none
   }
-  color: ${(props) => props[0].color || 'green'};
+  color: ${(props) => props[0].color};
 `
 const animationButton = keyframes `
     0% {
@@ -55,7 +55,7 @@ const animationButton = keyframes `
     }
 `
 export const ButtonClean = styled.button`
-  background-color: ${(props) => props[0].color || 'green'};
+  background-color: ${(props) => props[0].color};
   height: 35px;
   width: 65px;
   font-size: 16px;

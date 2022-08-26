@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
       monospace;
   }
 `
-export const Flex = styled.div`
+export const Container = styled.div`
     background: black;
     min-height: 100vh;
     display: flex;
