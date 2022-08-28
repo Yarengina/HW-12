@@ -4,7 +4,7 @@ import Line from './Line'
 import Button from './Button'
 import * as S from './styles'
 
-const Console = (...props) => {
+const Console = (props) => {
   const [lines, setLines] = useState(['C/users/SKYPRO_REACT>'])
 
   const onKeyPress = (e) => {

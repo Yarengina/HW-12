@@ -30,7 +30,7 @@ export const StyledConsole = styled.textarea`
   &:focus{
     outline:none
   }
-  color: ${(props) => props[0].color};
+  color: ${(props) => props.color};
 `
 const animationButton = keyframes `
     0% {
@@ -55,7 +55,7 @@ const animationButton = keyframes `
     }
 `
 export const ButtonClean = styled.button`
-  background-color: ${(props) => props[0].color};
+  background-color: ${(props) => props.color};
   height: 35px;
   width: 65px;
   font-size: 16px;
